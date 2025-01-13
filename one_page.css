@@ -1,0 +1,308 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/MontserratAlternates-Regular.ttf);
+}
+@font-face {
+    font-family: Italiana;
+    src: url(fonts/Italiana\,Montserrat/Italiana-Regular.ttf);
+}
+
+body {
+  position: absolute;
+  background: #191919;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  }
+  
+  .header {
+    height: auto; /* Изменяем на auto для адаптивности */
+    width: 100%;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 40px;
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    width: 90%; /* Ширина контейнера на мобильных устройствах */
+  }
+  
+  .movie {
+    position: relative; /* Изменяем на relative для адаптивности */
+    transition: transform 0.2s ease-in-out; /* Уменьшаем время перехода для лучшего UX */
+    overflow: hidden;
+    backdrop-filter: blur(100px); /* Уменьшаем размытость для адаптивности */
+  }
+  
+  .movie-el {
+    background: #7F1A1A;
+    width: 150px; /* Ширина элемента */
+    height: 150px; /* Высота элемента */
+    border-radius: 50%; /* Округляем элемент */
+    backdrop-filter: blur(10px); /* Уменьшаем размытость для адаптивности */
+  }
+  
+  .movie:hover {
+    transform: scale(1.1); /* Меньшее увеличение для адаптивности */
+  }
+  
+  .menu-item {
+    position: relative;
+    bottom: 0px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7rem; /* Используем rem для адаптивного шрифта */
+    margin: 5%; /* Меньше отступа, чтобы элементы помещались в мобильном виде */
+    font-family: Montserrat;
+    text-align: center;
+  }
+  #logo{
+    margin-right: 7%;
+  }
+  #basket{
+    margin-left: 7%;
+  }
+  
+  /* Медиа-запросы */
+  @media (max-width: 768px) {
+    .movie-el {
+      width: 100px; /* Уменьшаем размер элемента на мобильных */
+      height: 100px;
+    }
+  
+    .menu-item {
+      font-size: 1.2rem; /* Уменьшаем размер шрифта на мобильных */
+      margin-right: 5%; /* Меньше отступа */
+    }
+  
+    .container {
+      padding: 0 20px; /* Уменьшаем отступы на мобильных */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-item {
+      font-size: 1rem; /* Дополнительно уменьшаем размер шрифта */
+    }
+  
+    .container {
+      padding: 0 10px; /* Дополнительно уменьшаем отступы */
+    }
+  }
+
+.kala{
+    color: #751515;
+    font-family: Italiana;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+.text1{
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+    font-family: Montserrat;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.kala2{
+    position: relative;
+    color: rgba(161, 42, 42, 0.30);
+    font-family: Italiana;
+    font-size: 230px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    filter: blur(7.5px);
+    bottom: 500px;
+    left: 350px;
+}
+.arrow{
+    position: relative;
+    bottom: 600px;
+    left: 500px;
+}
+.social{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+    bottom: 1300px;
+}
+.tg{
+    height: 38px;
+    width: 43.33px;
+}
+.be{
+    height: 34px;
+    width: 46px;
+}
+.vk{
+    height: 33px;
+    width: 46px;
+}
+.line{
+    position: relative;
+    height: 312.03px;
+    width: 0px;
+    left: 150px;
+    border-left: solid #ffffff;
+    top: 370px;
+}
+.text2{
+    position: relative;
+    bottom: 1200px;
+    font-size: 100px;
+    font-family: Montserrat;
+    color: #fff;
+    text-align: center;
+}
+.photo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease;
+    gap: 90px;
+    bottom: 1200px;
+}
+.adress{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    top: 500px;
+}
+.adress-1{
+    color: #fff;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+.adress-2{
+    color: #fff;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+.adress-3{
+    color: #fff;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+.text-menu{
+    position: relative;
+    bottom: 1150px;
+    left: 600px;
+    font-size: 100px;
+    font-family: Italiana;
+    color: #fff;
+}
+.img-menu{
+    position: relative;
+    bottom: 1100px;
+    width: 1600px;
+    height: 1030px;
+}
+.frame {
+    position: relative;
+    left: 100px;
+    bottom: 2000px;
+    width: 500px; /* Ширина блока */
+    height: 700px; /* Высота блока */
+    border-radius: 30px;
+    overflow-y: scroll; /* Вертикальная полоса прокрутки */
+    padding: 10px;
+    background-color: #616161;
+    opacity: 50%;
+    backdrop-filter: blur(100px);
+    border: 5px linear-gradient(to right, #202020, #591C1C);
+}
+.category-el{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 50px;
+}
+#scroll-content {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    font-family: Italiana;
+    font-size: 15px;
+    color: #fff;
+
+}
+.form{
+    position: relative;
+    bottom: 1800px;
+}
+.text-form{
+    position: relative;
+    left: 500px;
+    font-size: 100px;
+    font-family: Montserrat;
+    color: #fff;
+}
+.photo-form{
+    position: relative;
+    top: 50px;
+}
+.rectangle-form{
+    position: relative;
+    margin: auto;
+    bottom: 950px;
+    width: 800px;
+    height: 800px;
+    background-color: #616161;
+    opacity: 70%;
+    border-radius: 30px;
+    border: 100spx linear-gradient(to right, #202020, #591C1C);
+    backdrop-filter: blur(500px);
+}
+.text-connect{
+    position: relative;
+    left: 200px;
+    top: 50px;
+    font-size: 50px;
+    font-family: Montserrat;
+    color: #ffffff;
+}
+.input1, .input2, .input3{
+    position: relative;
+    width: 200px;
+    padding-left: 100px;
+    width: 600px;
+    height: 100px;
+    background-color: #585755;
+    border-radius: 30px;
+    font-size: 30px;
+    color: #ffffff;
+}
+.input{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.button{
+    position: relative;
+    top: 30px;
+    border-radius: 30px;
+    width: 700px;
+    height: 100px;
+    background-color: #612727;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 50px;
+}
